@@ -1,0 +1,140 @@
+@import"./variables";
+
+@mixin fotos ($width, $height, $padding, $margin)
+{
+    width: $width;
+    height: $height;
+    padding: $padding;          /*Uso una mixin que la utilizo en las otras secciones de scss para darle formato a las imagenes*/
+    margin: $margin;
+}
+
+@media screen and (max-width: 1024px) 
+{
+    .contenedor
+    {
+        background-color: $color-fondo;
+        align-items: center;
+        main
+        {
+            align-items: center;
+            justify-items: center;
+            justify-content: center;
+            .foto_main
+            {
+                @include fotos (23rem,19rem,1rem,0px)
+            }
+            .foto_main_ventas
+            {
+                @include fotos(auto, auto, 1rem, 0px)
+            }
+            .main-texto
+            {
+                margin: 1rem;
+                font-size: 1rem;
+            }
+            .card
+            {
+                margin-bottom: 5rem;
+            }
+            ul li
+            {
+                list-style: none;
+                font-size: 1rem;
+            }
+            form
+            {
+                padding: 1.3rem;
+                margin: 1rem;
+            }
+        }
+    }
+}
+
+/*-----------------------------INICIA MEDIA QUARIE 768PX--------------------------------------------*/
+
+
+@media screen and (max-width: 768px)
+{
+    .contenedor
+    {
+        background-color: $color-fondo;
+        align-items: center;
+        main
+        {
+
+            .foto_main
+            {
+                @include fotos (16rem,16rem,0rem,0px)
+            }
+            
+            .main-texto
+            {
+                margin: 1rem;
+                font-size: 25px;
+            }
+            ul li
+            {
+                list-style: none;
+                font-size: 1rem;
+            } 
+            .card
+            {
+                margin-bottom: 5rem;
+            }
+            form
+            {
+                padding: 1.3rem;
+                margin: 1rem;
+            }
+        }
+    }
+}
+
+
+
+
+
+/*-----------------------------INICIA MEDIA QUARIE 528PX--------------------------------------------*/
+
+@media screen and (max-width: 578px) 
+{
+    .contenedor
+    {
+        background-color: $color-fondo;
+        justify-items: center;
+        main
+        {
+            .foto_main
+            {
+                @include fotos (30rem,25rem,1rem,0px)
+            }
+            .foto_main_ventas
+            {
+                @include fotos(100%, 14rem, 1rem, 0px)
+            }
+            .main-texto
+            {
+                margin: 1rem;
+                font-size: 25px;
+            }
+            ul li
+            {
+                list-style: none;
+                font-size: 1rem;
+            }
+            .card
+            {
+                margin-bottom: 5rem;
+            }
+            form
+            {
+                padding: 1.3rem;
+                margin: 1rem;
+            }
+            .btn
+            {
+                margin-bottom: 3rem;
+            }
+        }
+    }
+}

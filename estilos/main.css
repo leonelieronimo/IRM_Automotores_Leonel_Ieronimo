@@ -1,0 +1,365 @@
+.contenedor {
+  background: -webkit-gradient(linear, left top, left bottom, from(#383083), to(#9a989b));
+  background: linear-gradient(to bottom, #383083, #9a989b);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 0.25fr auto 1fr;
+      grid-template-rows: 0.25fr auto 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.encabezado {
+  background-color: #746f6f;
+  height: 100%;
+}
+
+.encabezado .navbar-light .navbar-nav .nav-link {
+  color: whitesmoke;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem;
+  font-size: 1rem;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+}
+
+.encabezado .navbar-light .navbar-nav .nav-link:hover {
+  font-size: 1.2rem;
+}
+
+.encabezado .encabezado-titulo {
+  font-size: 2rem;
+  color: burlywood;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .contenedor {
+    background-color: linear-gradient(to bottom, #383083, #9a989b);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contenedor main {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contenedor main .foto_main {
+    width: 23rem;
+    height: 19rem;
+    padding: 1rem;
+    /*Uso una mixin que la utilizo en las otras secciones de scss para darle formato a las imagenes*/
+    margin: 0px;
+  }
+  .contenedor main .foto_main_ventas {
+    width: auto;
+    height: auto;
+    padding: 1rem;
+    /*Uso una mixin que la utilizo en las otras secciones de scss para darle formato a las imagenes*/
+    margin: 0px;
+  }
+  .contenedor main .main-texto {
+    margin: 1rem;
+    font-size: 1rem;
+  }
+  .contenedor main .card {
+    margin-bottom: 5rem;
+  }
+  .contenedor main ul li {
+    list-style: none;
+    font-size: 1rem;
+  }
+  .contenedor main form {
+    padding: 1.3rem;
+    margin: 1rem;
+  }
+}
+
+/*-----------------------------INICIA MEDIA QUARIE 768PX--------------------------------------------*/
+@media screen and (max-width: 768px) {
+  .contenedor {
+    background-color: linear-gradient(to bottom, #383083, #9a989b);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contenedor main .foto_main {
+    width: 16rem;
+    height: 16rem;
+    padding: 0rem;
+    /*Uso una mixin que la utilizo en las otras secciones de scss para darle formato a las imagenes*/
+    margin: 0px;
+  }
+  .contenedor main .main-texto {
+    margin: 1rem;
+    font-size: 25px;
+  }
+  .contenedor main ul li {
+    list-style: none;
+    font-size: 1rem;
+  }
+  .contenedor main .card {
+    margin-bottom: 5rem;
+  }
+  .contenedor main form {
+    padding: 1.3rem;
+    margin: 1rem;
+  }
+}
+
+/*-----------------------------INICIA MEDIA QUARIE 528PX--------------------------------------------*/
+@media screen and (max-width: 578px) {
+  .contenedor {
+    background-color: linear-gradient(to bottom, #383083, #9a989b);
+    justify-items: center;
+  }
+  .contenedor main .foto_main {
+    width: 30rem;
+    height: 25rem;
+    padding: 1rem;
+    /*Uso una mixin que la utilizo en las otras secciones de scss para darle formato a las imagenes*/
+    margin: 0px;
+  }
+  .contenedor main .foto_main_ventas {
+    width: 100%;
+    height: 14rem;
+    padding: 1rem;
+    /*Uso una mixin que la utilizo en las otras secciones de scss para darle formato a las imagenes*/
+    margin: 0px;
+  }
+  .contenedor main .main-texto {
+    margin: 1rem;
+    font-size: 25px;
+  }
+  .contenedor main ul li {
+    list-style: none;
+    font-size: 1rem;
+  }
+  .contenedor main .card {
+    margin-bottom: 5rem;
+  }
+  .contenedor main form {
+    padding: 1.3rem;
+    margin: 1rem;
+  }
+  .contenedor main .btn {
+    margin-bottom: 3rem;
+  }
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 5rem;
+  height: 100%;
+}
+
+main .foto_main {
+  width: 34rem;
+  height: 26rem;
+  padding: 1rem;
+}
+
+main .foto_main_ventas {
+  width: auto;
+  height: auto;
+  padding: 1rem;
+}
+
+main .main-texto {
+  margin: 1rem;
+  font-style: normal;
+  color: #f3efef;
+  text-decoration: none;
+}
+
+main ul li {
+  list-style: none;
+  font-size: 1rem;
+}
+
+main .card-deck {
+  margin-bottom: 5rem;
+}
+
+main iframe {
+  margin-top: 3rem;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+main form {
+  padding: 1.3rem;
+  margin: 1rem;
+}
+
+main form .lead {
+  color: blanchedalmond;
+}
+
+footer {
+  background-color: black;
+  margin-top: 15rem;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.2rem;
+  margin: 1rem;
+  color: #f3efef;
+}
+
+footer ul li {
+  padding: 1rem;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+footer ul li:hover {
+  font-size: 1.4rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .contenedor {
+    background-color: linear-gradient(to bottom, #383083, #9a989b);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contenedor main {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contenedor main .foto_main {
+    width: 23rem;
+    height: 19rem;
+    padding: 1rem;
+    /*Uso una mixin que la utilizo en las otras secciones de scss para darle formato a las imagenes*/
+    margin: 0px;
+  }
+  .contenedor main .foto_main_ventas {
+    width: auto;
+    height: auto;
+    padding: 1rem;
+    /*Uso una mixin que la utilizo en las otras secciones de scss para darle formato a las imagenes*/
+    margin: 0px;
+  }
+  .contenedor main .main-texto {
+    margin: 1rem;
+    font-size: 1rem;
+  }
+  .contenedor main .card {
+    margin-bottom: 5rem;
+  }
+  .contenedor main ul li {
+    list-style: none;
+    font-size: 1rem;
+  }
+  .contenedor main form {
+    padding: 1.3rem;
+    margin: 1rem;
+  }
+}
+
+/*-----------------------------INICIA MEDIA QUARIE 768PX--------------------------------------------*/
+@media screen and (max-width: 768px) {
+  .contenedor {
+    background-color: linear-gradient(to bottom, #383083, #9a989b);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contenedor main .foto_main {
+    width: 16rem;
+    height: 16rem;
+    padding: 0rem;
+    /*Uso una mixin que la utilizo en las otras secciones de scss para darle formato a las imagenes*/
+    margin: 0px;
+  }
+  .contenedor main .main-texto {
+    margin: 1rem;
+    font-size: 25px;
+  }
+  .contenedor main ul li {
+    list-style: none;
+    font-size: 1rem;
+  }
+  .contenedor main .card {
+    margin-bottom: 5rem;
+  }
+  .contenedor main form {
+    padding: 1.3rem;
+    margin: 1rem;
+  }
+}
+
+/*-----------------------------INICIA MEDIA QUARIE 528PX--------------------------------------------*/
+@media screen and (max-width: 578px) {
+  .contenedor {
+    background-color: linear-gradient(to bottom, #383083, #9a989b);
+    justify-items: center;
+  }
+  .contenedor main .foto_main {
+    width: 30rem;
+    height: 25rem;
+    padding: 1rem;
+    /*Uso una mixin que la utilizo en las otras secciones de scss para darle formato a las imagenes*/
+    margin: 0px;
+  }
+  .contenedor main .foto_main_ventas {
+    width: 100%;
+    height: 14rem;
+    padding: 1rem;
+    /*Uso una mixin que la utilizo en las otras secciones de scss para darle formato a las imagenes*/
+    margin: 0px;
+  }
+  .contenedor main .main-texto {
+    margin: 1rem;
+    font-size: 25px;
+  }
+  .contenedor main ul li {
+    list-style: none;
+    font-size: 1rem;
+  }
+  .contenedor main .card {
+    margin-bottom: 5rem;
+  }
+  .contenedor main form {
+    padding: 1.3rem;
+    margin: 1rem;
+  }
+  .contenedor main .btn {
+    margin-bottom: 3rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */

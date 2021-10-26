@@ -1,0 +1,52 @@
+@import"./variables";
+@import"./responsives";
+
+main
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    height: 100%;
+    .foto_main
+    {
+        width: 34rem;
+        height: 26rem;
+        padding: 1rem;
+    }
+    .foto_main_ventas
+    {
+        width: auto;
+        height: auto;
+        padding: 1rem;
+    }
+    .main-texto
+    {
+        margin: 1rem;  
+        font-style:normal;
+        color:$color-texto;
+        text-decoration: none;
+    }
+    ul li
+    {
+        list-style: none;
+        font-size: 1rem;
+    }
+    .card-deck
+    {
+        margin-bottom: 5rem;
+    }
+    iframe
+    {
+        margin-top: 3rem;
+        align-content: flex-start;
+    }
+    form
+    {
+        padding: 1.3rem;
+        margin: 1rem;
+        .lead
+        {
+            color: blanchedalmond;
+        }
+    }
+}

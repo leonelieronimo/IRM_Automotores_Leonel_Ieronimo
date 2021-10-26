@@ -1,0 +1,10 @@
+@import"./variables";
+
+
+.contenedor
+{
+    background: $color-fondo;
+    display: grid;
+    grid-template-rows: 0.25fr auto 1fr;
+    align-items: center;
+}

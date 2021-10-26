@@ -1,0 +1,27 @@
+@import"./variables";
+
+
+
+.encabezado
+{
+    background-color: $color-fondo-encabezado;
+    height: 100%;
+    .navbar-light .navbar-nav .nav-link
+    {
+        color: $color-navs-encabezado;
+        display: flex;
+        padding: 1rem;
+        font-size: 1rem;
+        transition: all 0.7s;
+        &:hover
+        {
+            font-size: 1.2rem;
+        }
+    }
+    .encabezado-titulo
+    {
+        font-size: 2rem;
+        color: $color-titulo-encabezado;
+        padding: 1rem;
+    }
+}
