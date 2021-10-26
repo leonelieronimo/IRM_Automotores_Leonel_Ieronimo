@@ -161,7 +161,7 @@
     padding: 1.3rem;
     margin: 1rem;
   }
-  .contenedor main .btn {
+  .contenedor main .btn-primary {
     margin-bottom: 3rem;
     /*Separando los botones de seleccion por marcas en la seccion ventas.html*/
   }
@@ -397,7 +397,7 @@ footer ul li:hover {
     padding: 1.3rem;
     margin: 1rem;
   }
-  .contenedor main .btn {
+  .contenedor main .btn-primary {
     margin-bottom: 3rem;
     /*Separando los botones de seleccion por marcas en la seccion ventas.html*/
   }
