@@ -127,8 +127,12 @@
             }
             form
             {
-                padding: 1.3rem;    /*Le doy margin y padding al formulario de la seccion asesoramiento.html*/
+                padding: 1.3rem;    
                 margin: 1rem;
+            }
+            .btn
+            {
+                margin-bottom: 3rem;    /*Separando los botones de seleccion por marcas en la seccion ventas.html*/
             }
         }
     }

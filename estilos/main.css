@@ -159,8 +159,11 @@
   }
   .contenedor main form {
     padding: 1.3rem;
-    /*Le doy margin y padding al formulario de la seccion asesoramiento.html*/
     margin: 1rem;
+  }
+  .contenedor main .btn {
+    margin-bottom: 3rem;
+    /*Separando los botones de seleccion por marcas en la seccion ventas.html*/
   }
 }
 
@@ -392,8 +395,11 @@ footer ul li:hover {
   }
   .contenedor main form {
     padding: 1.3rem;
-    /*Le doy margin y padding al formulario de la seccion asesoramiento.html*/
     margin: 1rem;
+  }
+  .contenedor main .btn {
+    margin-bottom: 3rem;
+    /*Separando los botones de seleccion por marcas en la seccion ventas.html*/
   }
 }
 
