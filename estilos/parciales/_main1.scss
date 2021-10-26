@@ -9,15 +9,11 @@ main
     height: 100%;
     .foto_main
     {
-        width: 34rem;
-        height: 26rem;
-        padding: 1rem;
+        @include fotos (34rem,26rem,1rem,0rem);
     }
     .foto_main_ventas
     {
-        width: auto;
-        height: auto;
-        padding: 1rem;
+        @include fotos (auto,auto,1rem,0);
     }
     .main-texto
     {

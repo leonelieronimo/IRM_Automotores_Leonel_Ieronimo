@@ -169,12 +169,16 @@ main .foto_main {
   width: 34rem;
   height: 26rem;
   padding: 1rem;
+  /*Uso una mixin que la utilizo en las otras secciones de scss para darle formato a las imagenes*/
+  margin: 0rem;
 }
 
 main .foto_main_ventas {
   width: auto;
   height: auto;
   padding: 1rem;
+  /*Uso una mixin que la utilizo en las otras secciones de scss para darle formato a las imagenes*/
+  margin: 0;
 }
 
 main .main-texto {
