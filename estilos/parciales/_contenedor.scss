@@ -5,6 +5,7 @@
 {
     background: $color-fondo;
     display: grid;
-    grid-template-rows: 0.25fr auto 1fr;
+    grid-template-rows: 0.25fr auto 1fr;    /* Utilizo grid para armar mi pagina y lo divido en 3 filas.
+                                            Para el fondo utilizo una funcion linear-gradient */
     align-items: center;
 }

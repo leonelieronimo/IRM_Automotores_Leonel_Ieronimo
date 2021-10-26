@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .contenedor {
   background: -webkit-gradient(linear, left top, left bottom, from(#383083), to(#9a989b));
   background: linear-gradient(to bottom, #383083, #9a989b);
@@ -5,6 +6,8 @@
   display: grid;
   -ms-grid-rows: 0.25fr auto 1fr;
       grid-template-rows: 0.25fr auto 1fr;
+  /* Utilizo grid para armar mi pagina y lo divido en 3 filas.
+                                            Para el fondo utilizo una funcion linear-gradient */
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -12,6 +15,7 @@
 
 .encabezado {
   background-color: #746f6f;
+  /*Para el encabezado utilizo una variable que contiene el color de mi fondo de pantalla*/
   height: 100%;
 }
 
@@ -21,6 +25,8 @@
   display: -ms-flexbox;
   display: flex;
   padding: 1rem;
+  /*Para todo el encabezado elijo trabajar con flexbox para acomodar mas facil los items 
+                                y contenidos que llevan*/
   font-size: 1rem;
   -webkit-transition: all 0.7s;
   transition: all 0.7s;
@@ -28,17 +34,20 @@
 
 .encabezado .navbar-light .navbar-nav .nav-link:hover {
   font-size: 1.2rem;
+  /*Cuando el cursor este por encima de algun nav del header aumentaran su tamaño*/
 }
 
 .encabezado .encabezado-titulo {
   font-size: 2rem;
   color: burlywood;
+  /*Para el titulo del encabezado utilizo una variable que contiene su color*/
   padding: 1rem;
 }
 
 @media screen and (max-width: 1024px) {
   .contenedor {
     background-color: linear-gradient(to bottom, #383083, #9a989b);
+    /*Utilizo el mismo fondo en todos las medias quaries*/
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -58,20 +67,17 @@
     padding: 1rem;
     /*Uso una mixin que la utilizo en las otras secciones de scss para darle formato a las imagenes*/
     margin: 0px;
-  }
-  .contenedor main .foto_main_ventas {
-    width: auto;
-    height: auto;
-    padding: 1rem;
-    /*Uso una mixin que la utilizo en las otras secciones de scss para darle formato a las imagenes*/
-    margin: 0px;
+    /*Asignando formato a la imagenes de index.html con mixin*/
   }
   .contenedor main .main-texto {
     margin: 1rem;
     font-size: 1rem;
+    /*Le asigno formato a las palabras que se encuentran dentro del main
+                                    como los subtitulos u oraciones*/
   }
   .contenedor main .card {
     margin-bottom: 5rem;
+    /*Le asigno un margen inferior a la card de ventas.html para que no queden juntas unas con otras*/
   }
   .contenedor main ul li {
     list-style: none;
@@ -79,10 +85,12 @@
   }
   .contenedor main form {
     padding: 1.3rem;
+    /*Le doy margin y padding al formulario de la seccion asesoramiento.html*/
     margin: 1rem;
   }
 }
 
+/*-----------------------------FIN MEDIA QUARIE 1024PX--------------------------------------------*/
 /*-----------------------------INICIA MEDIA QUARIE 768PX--------------------------------------------*/
 @media screen and (max-width: 768px) {
   .contenedor {
@@ -97,9 +105,12 @@
     padding: 0rem;
     /*Uso una mixin que la utilizo en las otras secciones de scss para darle formato a las imagenes*/
     margin: 0px;
+    /*Asignando formato a la imagenes de index.html con mixin*/
   }
   .contenedor main .main-texto {
     margin: 1rem;
+    /*Le asigno formato a las palabras que se encuentran dentro del main
+                                    como los subtitulos u oraciones*/
     font-size: 25px;
   }
   .contenedor main ul li {
@@ -108,14 +119,17 @@
   }
   .contenedor main .card {
     margin-bottom: 5rem;
+    /*Le asigno un margen inferior a la card de ventas.html para que no queden juntas unas con otras*/
   }
   .contenedor main form {
     padding: 1.3rem;
+    /*Le doy margin y padding al formulario de la seccion asesoramiento.html*/
     margin: 1rem;
   }
 }
 
-/*-----------------------------INICIA MEDIA QUARIE 528PX--------------------------------------------*/
+/*-----------------------------FIN MEDIA QUARIE 768PX--------------------------------------------*/
+/*-----------------------------INICIA MEDIA QUARIE 578PX--------------------------------------------*/
 @media screen and (max-width: 578px) {
   .contenedor {
     background-color: linear-gradient(to bottom, #383083, #9a989b);
@@ -127,16 +141,12 @@
     padding: 1rem;
     /*Uso una mixin que la utilizo en las otras secciones de scss para darle formato a las imagenes*/
     margin: 0px;
-  }
-  .contenedor main .foto_main_ventas {
-    width: 100%;
-    height: 14rem;
-    padding: 1rem;
-    /*Uso una mixin que la utilizo en las otras secciones de scss para darle formato a las imagenes*/
-    margin: 0px;
+    /*Asignando formato a la imagenes de index.html con mixin*/
   }
   .contenedor main .main-texto {
     margin: 1rem;
+    /*Le asigno formato a las palabras que se encuentran dentro del main
+                                        como los subtitulos u oraciones*/
     font-size: 25px;
   }
   .contenedor main ul li {
@@ -145,22 +155,25 @@
   }
   .contenedor main .card {
     margin-bottom: 5rem;
+    /*Le asigno un margen inferior a la card de ventas.html para que no queden juntas unas con otras*/
   }
   .contenedor main form {
     padding: 1.3rem;
+    /*Le doy margin y padding al formulario de la seccion asesoramiento.html*/
     margin: 1rem;
-  }
-  .contenedor main .btn {
-    margin-bottom: 3rem;
   }
 }
 
+/*-----------------------------FIN MEDIA QUARIE 578PX--------------------------------------------*/
+/*Importo el responsives.scss para poder utilizar el mixin fotos que está ahi declarado*/
 main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  /*Elijo que el main sea flexbox dentro de mi fila de grid para poder trabajr mejor
+                        con el contenido y poder darles una posicion y estilo de manera mas fácil*/
   margin-top: 5rem;
   height: 100%;
 }
@@ -171,6 +184,8 @@ main .foto_main {
   padding: 1rem;
   /*Uso una mixin que la utilizo en las otras secciones de scss para darle formato a las imagenes*/
   margin: 0rem;
+  /*Utilizo el mixin para darle formato a mis fotos del home. El orden
+                                                es width, height, padding, margin*/
 }
 
 main .foto_main_ventas {
@@ -179,12 +194,15 @@ main .foto_main_ventas {
   padding: 1rem;
   /*Uso una mixin que la utilizo en las otras secciones de scss para darle formato a las imagenes*/
   margin: 0;
+  /*Utilizo el mixin para darle formato a mis fotos de la seccion ventas. El orden
+                                            es width, height, padding, margin*/
 }
 
 main .main-texto {
   margin: 1rem;
   font-style: normal;
   color: #f3efef;
+  /*Le doy formato a las palabras que se encuentren dentro del main en cualquer secion*/
   text-decoration: none;
 }
 
@@ -195,26 +213,32 @@ main ul li {
 
 main .card-deck {
   margin-bottom: 5rem;
+  /*Pongo un margen superior en las cards de la seccion ventas para separarlas*/
 }
 
 main iframe {
   margin-top: 3rem;
   -ms-flex-line-pack: start;
       align-content: flex-start;
+  /*Separo con el margin la seccion de google maps que aparece en la seecion nosotros.html*/
 }
 
 main form {
   padding: 1.3rem;
+  /*Le doy un formato al formulario de la seccion asesoramiento.html*/
   margin: 1rem;
 }
 
 main form .lead {
   color: blanchedalmond;
+  /*Las palabras que estan dentro del formulario les doy color con esta línea de código*/
 }
 
 footer {
   background-color: black;
+  /*El fondo de pantalla de mi footer lo asigno con esta lína utilizando una variable*/
   margin-top: 15rem;
+  /*Le pongo un margin top para separarlo del main y que quede abajo bien en el pie de pagina*/
 }
 
 footer ul {
@@ -227,6 +251,8 @@ footer ul {
           flex-direction: row;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+  /*Elijo que el footer sea flexbox para poder trabajar mejor en cuanto a la distribucion
+                                y asignacion de estilos al contenido que se encuentra dentro de el*/
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -236,6 +262,7 @@ footer ul {
   font-size: 1.2rem;
   margin: 1rem;
   color: #f3efef;
+  /*El color del texto lo defino con una variable que ya tiene asignado un color*/
 }
 
 footer ul li {
@@ -245,12 +272,15 @@ footer ul li {
 }
 
 footer ul li:hover {
+  /*En esta parte lo que hace es aumentar el tamaño de los items del footer
+                                        cuando el cursor se posiciona sobre ellos*/
   font-size: 1.4rem;
 }
 
 @media screen and (max-width: 1024px) {
   .contenedor {
     background-color: linear-gradient(to bottom, #383083, #9a989b);
+    /*Utilizo el mismo fondo en todos las medias quaries*/
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -270,20 +300,17 @@ footer ul li:hover {
     padding: 1rem;
     /*Uso una mixin que la utilizo en las otras secciones de scss para darle formato a las imagenes*/
     margin: 0px;
-  }
-  .contenedor main .foto_main_ventas {
-    width: auto;
-    height: auto;
-    padding: 1rem;
-    /*Uso una mixin que la utilizo en las otras secciones de scss para darle formato a las imagenes*/
-    margin: 0px;
+    /*Asignando formato a la imagenes de index.html con mixin*/
   }
   .contenedor main .main-texto {
     margin: 1rem;
     font-size: 1rem;
+    /*Le asigno formato a las palabras que se encuentran dentro del main
+                                    como los subtitulos u oraciones*/
   }
   .contenedor main .card {
     margin-bottom: 5rem;
+    /*Le asigno un margen inferior a la card de ventas.html para que no queden juntas unas con otras*/
   }
   .contenedor main ul li {
     list-style: none;
@@ -291,10 +318,12 @@ footer ul li:hover {
   }
   .contenedor main form {
     padding: 1.3rem;
+    /*Le doy margin y padding al formulario de la seccion asesoramiento.html*/
     margin: 1rem;
   }
 }
 
+/*-----------------------------FIN MEDIA QUARIE 1024PX--------------------------------------------*/
 /*-----------------------------INICIA MEDIA QUARIE 768PX--------------------------------------------*/
 @media screen and (max-width: 768px) {
   .contenedor {
@@ -309,9 +338,12 @@ footer ul li:hover {
     padding: 0rem;
     /*Uso una mixin que la utilizo en las otras secciones de scss para darle formato a las imagenes*/
     margin: 0px;
+    /*Asignando formato a la imagenes de index.html con mixin*/
   }
   .contenedor main .main-texto {
     margin: 1rem;
+    /*Le asigno formato a las palabras que se encuentran dentro del main
+                                    como los subtitulos u oraciones*/
     font-size: 25px;
   }
   .contenedor main ul li {
@@ -320,14 +352,17 @@ footer ul li:hover {
   }
   .contenedor main .card {
     margin-bottom: 5rem;
+    /*Le asigno un margen inferior a la card de ventas.html para que no queden juntas unas con otras*/
   }
   .contenedor main form {
     padding: 1.3rem;
+    /*Le doy margin y padding al formulario de la seccion asesoramiento.html*/
     margin: 1rem;
   }
 }
 
-/*-----------------------------INICIA MEDIA QUARIE 528PX--------------------------------------------*/
+/*-----------------------------FIN MEDIA QUARIE 768PX--------------------------------------------*/
+/*-----------------------------INICIA MEDIA QUARIE 578PX--------------------------------------------*/
 @media screen and (max-width: 578px) {
   .contenedor {
     background-color: linear-gradient(to bottom, #383083, #9a989b);
@@ -339,16 +374,12 @@ footer ul li:hover {
     padding: 1rem;
     /*Uso una mixin que la utilizo en las otras secciones de scss para darle formato a las imagenes*/
     margin: 0px;
-  }
-  .contenedor main .foto_main_ventas {
-    width: 100%;
-    height: 14rem;
-    padding: 1rem;
-    /*Uso una mixin que la utilizo en las otras secciones de scss para darle formato a las imagenes*/
-    margin: 0px;
+    /*Asignando formato a la imagenes de index.html con mixin*/
   }
   .contenedor main .main-texto {
     margin: 1rem;
+    /*Le asigno formato a las palabras que se encuentran dentro del main
+                                        como los subtitulos u oraciones*/
     font-size: 25px;
   }
   .contenedor main ul li {
@@ -357,13 +388,14 @@ footer ul li:hover {
   }
   .contenedor main .card {
     margin-bottom: 5rem;
+    /*Le asigno un margen inferior a la card de ventas.html para que no queden juntas unas con otras*/
   }
   .contenedor main form {
     padding: 1.3rem;
+    /*Le doy margin y padding al formulario de la seccion asesoramiento.html*/
     margin: 1rem;
   }
-  .contenedor main .btn {
-    margin-bottom: 3rem;
-  }
 }
+
+/*-----------------------------FIN MEDIA QUARIE 578PX--------------------------------------------*/
 /*# sourceMappingURL=main.css.map */

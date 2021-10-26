@@ -1,48 +1,51 @@
 @import"./variables";
-@import"./responsives";
+@import"./responsives"; /*Importo el responsives.scss para poder utilizar el mixin fotos que está ahi declarado*/
 
 main
 {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap;    /*Elijo que el main sea flexbox dentro de mi fila de grid para poder trabajr mejor
+                        con el contenido y poder darles una posicion y estilo de manera mas fácil*/
     margin-top: 5rem;
     height: 100%;
     .foto_main
     {
-        @include fotos (34rem,26rem,1rem,0rem);
+        @include fotos (34rem,26rem,1rem,0rem); /*Utilizo el mixin para darle formato a mis fotos del home. El orden
+                                                es width, height, padding, margin*/
     }
     .foto_main_ventas
     {
-        @include fotos (auto,auto,1rem,0);
+        @include fotos (auto,auto,1rem,0);  /*Utilizo el mixin para darle formato a mis fotos de la seccion ventas. El orden
+                                            es width, height, padding, margin*/
     }
     .main-texto
     {
         margin: 1rem;  
         font-style:normal;
-        color:$color-texto;
+        color:$color-texto;     /*Le doy formato a las palabras que se encuentren dentro del main en cualquer secion*/
         text-decoration: none;
     }
     ul li
     {
         list-style: none;
-        font-size: 1rem;
+        font-size: 1rem;    
     }
     .card-deck
     {
-        margin-bottom: 5rem;
+        margin-bottom: 5rem;    /*Pongo un margen superior en las cards de la seccion ventas para separarlas*/
     }
     iframe
     {
         margin-top: 3rem;
-        align-content: flex-start;
+        align-content: flex-start;  /*Separo con el margin la seccion de google maps que aparece en la seecion nosotros.html*/
     }
     form
     {
-        padding: 1.3rem;
+        padding: 1.3rem;    /*Le doy un formato al formulario de la seccion asesoramiento.html*/
         margin: 1rem;
         .lead
-        {
-            color: blanchedalmond;
+        {               
+            color: blanchedalmond;  /*Las palabras que estan dentro del formulario les doy color con esta línea de código*/
         }
     }
 }

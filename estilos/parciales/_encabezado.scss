@@ -4,24 +4,25 @@
 
 .encabezado
 {
-    background-color: $color-fondo-encabezado;
+    background-color: $color-fondo-encabezado;  /*Para el encabezado utilizo una variable que contiene el color de mi fondo de pantalla*/
     height: 100%;
     .navbar-light .navbar-nav .nav-link
     {
         color: $color-navs-encabezado;
         display: flex;
-        padding: 1rem;
-        font-size: 1rem;
-        transition: all 0.7s;
+        padding: 1rem;      /*Para todo el encabezado elijo trabajar con flexbox para acomodar mas facil los items 
+                                y contenidos que llevan*/
+        font-size: 1rem;        
+        transition: all 0.7s;   
         &:hover
         {
-            font-size: 1.2rem;
+            font-size: 1.2rem;      /*Cuando el cursor este por encima de algun nav del header aumentaran su tamaño*/
         }
     }
     .encabezado-titulo
     {
         font-size: 2rem;
-        color: $color-titulo-encabezado;
+        color: $color-titulo-encabezado;    /*Para el titulo del encabezado utilizo una variable que contiene su color*/
         padding: 1rem;
     }
 }

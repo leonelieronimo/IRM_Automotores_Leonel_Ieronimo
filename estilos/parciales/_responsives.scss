@@ -12,7 +12,7 @@
 {
     .contenedor
     {
-        background-color: $color-fondo;
+        background-color: $color-fondo; /*Utilizo el mismo fondo en todos las medias quaries*/
         align-items: center;
         main
         {
@@ -21,20 +21,17 @@
             justify-content: center;
             .foto_main
             {
-                @include fotos (23rem,19rem,1rem,0px)
-            }
-            .foto_main_ventas
-            {
-                @include fotos(auto, auto, 1rem, 0px)
+                @include fotos (23rem,19rem,1rem,0px);  /*Asignando formato a la imagenes de index.html con mixin*/     
             }
             .main-texto
             {
                 margin: 1rem;
-                font-size: 1rem;
+                font-size: 1rem;    /*Le asigno formato a las palabras que se encuentran dentro del main
+                                    como los subtitulos u oraciones*/
             }
             .card
-            {
-                margin-bottom: 5rem;
+            {   
+                margin-bottom: 5rem;    /*Le asigno un margen inferior a la card de ventas.html para que no queden juntas unas con otras*/
             }
             ul li
             {
@@ -43,12 +40,15 @@
             }
             form
             {
-                padding: 1.3rem;
+                padding: 1.3rem;        /*Le doy margin y padding al formulario de la seccion asesoramiento.html*/
                 margin: 1rem;
             }
         }
     }
 }
+
+/*-----------------------------FIN MEDIA QUARIE 1024PX--------------------------------------------*/
+
 
 /*-----------------------------INICIA MEDIA QUARIE 768PX--------------------------------------------*/
 
@@ -64,12 +64,13 @@
 
             .foto_main
             {
-                @include fotos (16rem,16rem,0rem,0px)
+                @include fotos (16rem,16rem,0rem,0px);  /*Asignando formato a la imagenes de index.html con mixin*/
             }
             
             .main-texto
             {
-                margin: 1rem;
+                margin: 1rem;       /*Le asigno formato a las palabras que se encuentran dentro del main
+                                    como los subtitulos u oraciones*/
                 font-size: 25px;
             }
             ul li
@@ -79,22 +80,23 @@
             } 
             .card
             {
-                margin-bottom: 5rem;
+                margin-bottom: 5rem;     /*Le asigno un margen inferior a la card de ventas.html para que no queden juntas unas con otras*/
             }
             form
             {
-                padding: 1.3rem;
+                padding: 1.3rem;    /*Le doy margin y padding al formulario de la seccion asesoramiento.html*/
                 margin: 1rem;
             }
         }
     }
 }
 
+/*-----------------------------FIN MEDIA QUARIE 768PX--------------------------------------------*/
 
 
 
 
-/*-----------------------------INICIA MEDIA QUARIE 528PX--------------------------------------------*/
+/*-----------------------------INICIA MEDIA QUARIE 578PX--------------------------------------------*/
 
 @media screen and (max-width: 578px) 
 {
@@ -106,15 +108,12 @@
         {
             .foto_main
             {
-                @include fotos (30rem,25rem,1rem,0px)
-            }
-            .foto_main_ventas
-            {
-                @include fotos(100%, 14rem, 1rem, 0px)
+                @include fotos (30rem,25rem,1rem,0px);  /*Asignando formato a la imagenes de index.html con mixin*/
             }
             .main-texto
             {
-                margin: 1rem;
+                margin: 1rem;           /*Le asigno formato a las palabras que se encuentran dentro del main
+                                        como los subtitulos u oraciones*/
                 font-size: 25px;
             }
             ul li
@@ -124,17 +123,15 @@
             }
             .card
             {
-                margin-bottom: 5rem;
+                margin-bottom: 5rem;     /*Le asigno un margen inferior a la card de ventas.html para que no queden juntas unas con otras*/
             }
             form
             {
-                padding: 1.3rem;
+                padding: 1.3rem;    /*Le doy margin y padding al formulario de la seccion asesoramiento.html*/
                 margin: 1rem;
-            }
-            .btn
-            {
-                margin-bottom: 3rem;
             }
         }
     }
 }
+
+/*-----------------------------FIN MEDIA QUARIE 578PX--------------------------------------------*/

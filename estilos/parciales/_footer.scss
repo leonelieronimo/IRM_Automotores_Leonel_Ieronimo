@@ -2,24 +2,26 @@
 
 footer
 {
-    background-color: $color-fondo-footer;
-    margin-top: 15rem;
+    background-color: $color-fondo-footer;  /*El fondo de pantalla de mi footer lo asigno con esta lína utilizando una variable*/
+    margin-top: 15rem;  /*Le pongo un margin top para separarlo del main y que quede abajo bien en el pie de pagina*/
     ul
     {
         display: flex;
         flex-direction: row;
-        flex-wrap: nowrap;
+        flex-wrap: nowrap;      /*Elijo que el footer sea flexbox para poder trabajar mejor en cuanto a la distribucion
+                                y asignacion de estilos al contenido que se encuentra dentro de el*/
         align-items: center;
         justify-content: space-between;
         font-size: 1.2rem;
-        margin: 1rem;
-        color: $color-texto;
+        margin: 1rem;   
+        color: $color-texto;    /*El color del texto lo defino con una variable que ya tiene asignado un color*/
         li
         {
             padding: 1rem;
             transition: all 0.5s;
             &:hover
-            {
+            {                           /*En esta parte lo que hace es aumentar el tamaño de los items del footer
+                                        cuando el cursor se posiciona sobre ellos*/    
                 font-size: 1.4rem;
             }
         }
