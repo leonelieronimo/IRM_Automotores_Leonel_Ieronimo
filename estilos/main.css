@@ -161,10 +161,6 @@
     padding: 1.3rem;
     margin: 1rem;
   }
-  .contenedor main .btn-primary {
-    margin-bottom: 3rem;
-    /*Separando los botones de seleccion por marcas en la seccion ventas.html*/
-  }
 }
 
 /*-----------------------------FIN MEDIA QUARIE 578PX--------------------------------------------*/
@@ -396,10 +392,6 @@ footer ul li:hover {
   .contenedor main form {
     padding: 1.3rem;
     margin: 1rem;
-  }
-  .contenedor main .btn-primary {
-    margin-bottom: 3rem;
-    /*Separando los botones de seleccion por marcas en la seccion ventas.html*/
   }
 }
 
