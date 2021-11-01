@@ -30,6 +30,11 @@
             color: $color-navs-encabezado;
         }      
     }
+    .navbar-toggler
+    {
+        background-color: $color-navs-encabezado;
+    }
+
     .encabezado-titulo
     {
         font-size: 2rem;

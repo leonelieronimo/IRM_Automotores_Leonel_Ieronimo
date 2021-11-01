@@ -1,6 +1,7 @@
 @charset "UTF-8";
 .contenedor {
-  background: #f1f1f1;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#9a989b));
+  background: linear-gradient(to bottom, white, #9a989b);
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 0.25fr auto 1fr;
@@ -40,6 +41,10 @@
   color: #E0B000;
 }
 
+.encabezado .navbar-toggler {
+  background-color: #E0B000;
+}
+
 .encabezado .encabezado-titulo {
   font-size: 2rem;
   color: #FFD431;
@@ -53,7 +58,7 @@
 
 @media screen and (max-width: 1024px) {
   .contenedor {
-    background-color: #f1f1f1;
+    background-color: linear-gradient(to bottom, white, #9a989b);
     /*Utilizo el mismo fondo en todos las medias quaries*/
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -101,7 +106,7 @@
 /*-----------------------------INICIA MEDIA QUARIE 768PX--------------------------------------------*/
 @media screen and (max-width: 768px) {
   .contenedor {
-    background-color: #f1f1f1;
+    background-color: linear-gradient(to bottom, white, #9a989b);
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -133,14 +138,24 @@
     /*Le doy margin y padding al formulario de la seccion asesoramiento.html*/
     margin: 1rem;
   }
+  .contenedor main iframe {
+    width: 30rem;
+    height: 25rem;
+    padding: 1rem;
+    /*Uso una mixin que la utilizo en las otras secciones de scss para darle formato a las imagenes*/
+    margin: 0px;
+  }
 }
 
 /*-----------------------------FIN MEDIA QUARIE 768PX--------------------------------------------*/
 /*-----------------------------INICIA MEDIA QUARIE 578PX--------------------------------------------*/
 @media screen and (max-width: 578px) {
   .contenedor {
-    background-color: #f1f1f1;
+    width: 100%;
     justify-items: center;
+  }
+  .contenedor .encabezado {
+    width: 100%;
   }
   .contenedor main .foto_main {
     width: 30rem;
@@ -168,9 +183,115 @@
     padding: 1.3rem;
     margin: 1rem;
   }
+  .contenedor main iframe {
+    width: 30rem;
+    height: 25rem;
+    padding: 1rem;
+    /*Uso una mixin que la utilizo en las otras secciones de scss para darle formato a las imagenes*/
+    margin: 0rem;
+  }
+  .contenedor footer {
+    width: 100%;
+  }
 }
 
 /*-----------------------------FIN MEDIA QUARIE 578PX--------------------------------------------*/
+/*-----------------------------INICIO MEDIA QUARIE 375PX--------------------------------------------*/
+@media screen and (max-width: 375px) {
+  .contenedor {
+    width: 100%;
+    justify-items: center;
+  }
+  .contenedor .encabezado {
+    width: 100%;
+  }
+  .contenedor main .foto_main {
+    width: 29rem;
+    height: 20rem;
+    padding: 1rem;
+    /*Uso una mixin que la utilizo en las otras secciones de scss para darle formato a las imagenes*/
+    margin: 0px;
+    /*Asignando formato a la imagenes de index.html con mixin*/
+  }
+  .contenedor main .main-texto {
+    margin: 1rem;
+    /*Le asigno formato a las palabras que se encuentran dentro del main
+                                        como los subtitulos u oraciones*/
+    font-size: 25px;
+  }
+  .contenedor main ul li {
+    list-style: none;
+    font-size: 1rem;
+  }
+  .contenedor main .card {
+    margin-bottom: 5rem;
+    /*Le asigno un margen inferior a la card de ventas.html para que no queden juntas unas con otras*/
+  }
+  .contenedor main form {
+    padding: 1.3rem;
+    margin: 1rem;
+  }
+  .contenedor main iframe {
+    width: 29rem;
+    height: 20rem;
+    padding: 1rem;
+    /*Uso una mixin que la utilizo en las otras secciones de scss para darle formato a las imagenes*/
+    margin: 0px;
+  }
+  .contenedor footer {
+    width: 100%;
+  }
+}
+
+/*-----------------------------FIN MEDIA QUARIE 375PX--------------------------------------------*/
+/*-----------------------------INICIO MEDIA QUARIE 320PX--------------------------------------------*/
+@media screen and (max-width: 320px) {
+  .contenedor {
+    width: 100%;
+    justify-items: center;
+  }
+  .contenedor .encabezado {
+    width: 100%;
+  }
+  .contenedor main .foto_main {
+    width: 22rem;
+    height: 18rem;
+    padding: 1rem;
+    /*Uso una mixin que la utilizo en las otras secciones de scss para darle formato a las imagenes*/
+    margin: 0px;
+    /*Asignando formato a la imagenes de index.html con mixin*/
+  }
+  .contenedor main .main-texto {
+    margin: 1rem;
+    /*Le asigno formato a las palabras que se encuentran dentro del main
+                                        como los subtitulos u oraciones*/
+    font-size: 25px;
+  }
+  .contenedor main ul li {
+    list-style: none;
+    font-size: 1rem;
+  }
+  .contenedor main .card {
+    margin-bottom: 5rem;
+    /*Le asigno un margen inferior a la card de ventas.html para que no queden juntas unas con otras*/
+  }
+  .contenedor main form {
+    padding: 1.3rem;
+    margin: 1rem;
+  }
+  .contenedor main iframe {
+    width: 29rem;
+    height: 20rem;
+    padding: 1rem;
+    /*Uso una mixin que la utilizo en las otras secciones de scss para darle formato a las imagenes*/
+    margin: 0px;
+  }
+  .contenedor footer {
+    width: 100%;
+  }
+}
+
+/*-----------------------------FIN MEDIA QUARIE 320PX--------------------------------------------*/
 /*Importo el responsives.scss para poder utilizar el mixin fotos que está ahi declarado*/
 main {
   display: -webkit-box;
@@ -243,7 +364,7 @@ main .dropdown-item {
 }
 
 main .dropdown-item:hover {
-  background-color: #f1f1f1;
+  background-color: linear-gradient(to bottom, white, #9a989b);
 }
 
 main form {
@@ -307,7 +428,7 @@ footer ul .nav-link {
 
 @media screen and (max-width: 1024px) {
   .contenedor {
-    background-color: #f1f1f1;
+    background-color: linear-gradient(to bottom, white, #9a989b);
     /*Utilizo el mismo fondo en todos las medias quaries*/
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -355,7 +476,7 @@ footer ul .nav-link {
 /*-----------------------------INICIA MEDIA QUARIE 768PX--------------------------------------------*/
 @media screen and (max-width: 768px) {
   .contenedor {
-    background-color: #f1f1f1;
+    background-color: linear-gradient(to bottom, white, #9a989b);
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -387,14 +508,24 @@ footer ul .nav-link {
     /*Le doy margin y padding al formulario de la seccion asesoramiento.html*/
     margin: 1rem;
   }
+  .contenedor main iframe {
+    width: 30rem;
+    height: 25rem;
+    padding: 1rem;
+    /*Uso una mixin que la utilizo en las otras secciones de scss para darle formato a las imagenes*/
+    margin: 0px;
+  }
 }
 
 /*-----------------------------FIN MEDIA QUARIE 768PX--------------------------------------------*/
 /*-----------------------------INICIA MEDIA QUARIE 578PX--------------------------------------------*/
 @media screen and (max-width: 578px) {
   .contenedor {
-    background-color: #f1f1f1;
+    width: 100%;
     justify-items: center;
+  }
+  .contenedor .encabezado {
+    width: 100%;
   }
   .contenedor main .foto_main {
     width: 30rem;
@@ -422,7 +553,113 @@ footer ul .nav-link {
     padding: 1.3rem;
     margin: 1rem;
   }
+  .contenedor main iframe {
+    width: 30rem;
+    height: 25rem;
+    padding: 1rem;
+    /*Uso una mixin que la utilizo en las otras secciones de scss para darle formato a las imagenes*/
+    margin: 0rem;
+  }
+  .contenedor footer {
+    width: 100%;
+  }
 }
 
 /*-----------------------------FIN MEDIA QUARIE 578PX--------------------------------------------*/
+/*-----------------------------INICIO MEDIA QUARIE 375PX--------------------------------------------*/
+@media screen and (max-width: 375px) {
+  .contenedor {
+    width: 100%;
+    justify-items: center;
+  }
+  .contenedor .encabezado {
+    width: 100%;
+  }
+  .contenedor main .foto_main {
+    width: 29rem;
+    height: 20rem;
+    padding: 1rem;
+    /*Uso una mixin que la utilizo en las otras secciones de scss para darle formato a las imagenes*/
+    margin: 0px;
+    /*Asignando formato a la imagenes de index.html con mixin*/
+  }
+  .contenedor main .main-texto {
+    margin: 1rem;
+    /*Le asigno formato a las palabras que se encuentran dentro del main
+                                        como los subtitulos u oraciones*/
+    font-size: 25px;
+  }
+  .contenedor main ul li {
+    list-style: none;
+    font-size: 1rem;
+  }
+  .contenedor main .card {
+    margin-bottom: 5rem;
+    /*Le asigno un margen inferior a la card de ventas.html para que no queden juntas unas con otras*/
+  }
+  .contenedor main form {
+    padding: 1.3rem;
+    margin: 1rem;
+  }
+  .contenedor main iframe {
+    width: 29rem;
+    height: 20rem;
+    padding: 1rem;
+    /*Uso una mixin que la utilizo en las otras secciones de scss para darle formato a las imagenes*/
+    margin: 0px;
+  }
+  .contenedor footer {
+    width: 100%;
+  }
+}
+
+/*-----------------------------FIN MEDIA QUARIE 375PX--------------------------------------------*/
+/*-----------------------------INICIO MEDIA QUARIE 320PX--------------------------------------------*/
+@media screen and (max-width: 320px) {
+  .contenedor {
+    width: 100%;
+    justify-items: center;
+  }
+  .contenedor .encabezado {
+    width: 100%;
+  }
+  .contenedor main .foto_main {
+    width: 22rem;
+    height: 18rem;
+    padding: 1rem;
+    /*Uso una mixin que la utilizo en las otras secciones de scss para darle formato a las imagenes*/
+    margin: 0px;
+    /*Asignando formato a la imagenes de index.html con mixin*/
+  }
+  .contenedor main .main-texto {
+    margin: 1rem;
+    /*Le asigno formato a las palabras que se encuentran dentro del main
+                                        como los subtitulos u oraciones*/
+    font-size: 25px;
+  }
+  .contenedor main ul li {
+    list-style: none;
+    font-size: 1rem;
+  }
+  .contenedor main .card {
+    margin-bottom: 5rem;
+    /*Le asigno un margen inferior a la card de ventas.html para que no queden juntas unas con otras*/
+  }
+  .contenedor main form {
+    padding: 1.3rem;
+    margin: 1rem;
+  }
+  .contenedor main iframe {
+    width: 29rem;
+    height: 20rem;
+    padding: 1rem;
+    /*Uso una mixin que la utilizo en las otras secciones de scss para darle formato a las imagenes*/
+    margin: 0px;
+  }
+  .contenedor footer {
+    width: 100%;
+  }
+}
+
+/*-----------------------------FIN MEDIA QUARIE 320PX--------------------------------------------*/
 /*# sourceMappingURL=main.css.map */
