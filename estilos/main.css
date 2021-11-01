@@ -1,7 +1,6 @@
 @charset "UTF-8";
 .contenedor {
-  background: -webkit-gradient(linear, left top, left bottom, from(#383083), to(#9a989b));
-  background: linear-gradient(to bottom, #383083, #9a989b);
+  background: #f1f1f1;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 0.25fr auto 1fr;
@@ -14,7 +13,7 @@
 }
 
 .encabezado {
-  background-color: #746f6f;
+  background-color: #0a0222;
   /*Para el encabezado utilizo una variable que contiene el color de mi fondo de pantalla*/
   height: 100%;
 }
@@ -26,31 +25,35 @@
   padding: 1rem;
   /*Para todo el encabezado elijo trabajar con flexbox para acomodar mas facil los items 
                                                          y contenidos que llevan*/
-  color: whitesmoke;
+  color: #E0B000;
   font-size: 1rem;
-  -webkit-transition: all 0.7s;
-  transition: all 0.7s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .encabezado .navbar-light .navbar-nav .nav-link:hover {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   /*Cuando el cursor este por encima de algun nav del header aumentaran su tamaño*/
 }
 
 .encabezado .navbar-light:hover {
-  color: whitesmoke;
+  color: #E0B000;
 }
 
 .encabezado .encabezado-titulo {
   font-size: 2rem;
-  color: burlywood;
+  color: #FFD431;
   /*Para el titulo del encabezado utilizo una variable que contiene su color*/
   padding: 1rem;
 }
 
+.encabezado .encabezado-titulo:hover {
+  color: white;
+}
+
 @media screen and (max-width: 1024px) {
   .contenedor {
-    background-color: linear-gradient(to bottom, #383083, #9a989b);
+    background-color: #f1f1f1;
     /*Utilizo el mismo fondo en todos las medias quaries*/
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -98,7 +101,7 @@
 /*-----------------------------INICIA MEDIA QUARIE 768PX--------------------------------------------*/
 @media screen and (max-width: 768px) {
   .contenedor {
-    background-color: linear-gradient(to bottom, #383083, #9a989b);
+    background-color: #f1f1f1;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -136,7 +139,7 @@
 /*-----------------------------INICIA MEDIA QUARIE 578PX--------------------------------------------*/
 @media screen and (max-width: 578px) {
   .contenedor {
-    background-color: linear-gradient(to bottom, #383083, #9a989b);
+    background-color: #f1f1f1;
     justify-items: center;
   }
   .contenedor main .foto_main {
@@ -204,7 +207,7 @@ main .foto_main_ventas {
 main .main-texto {
   margin: 1rem;
   font-style: normal;
-  color: #f3efef;
+  color: #100235;
   /*Le doy formato a las palabras que se encuentren dentro del main en cualquer secion*/
   text-decoration: none;
 }
@@ -226,6 +229,23 @@ main iframe {
   /*Separo con el margin la seccion de google maps que aparece en la seecion nosotros.html*/
 }
 
+main .btn {
+  background-color: #0a0222;
+  color: #E0B000;
+}
+
+main .dropdown-menu {
+  background-color: #0a0222;
+}
+
+main .dropdown-item {
+  color: #E0B000;
+}
+
+main .dropdown-item:hover {
+  background-color: #f1f1f1;
+}
+
 main form {
   padding: 1.3rem;
   /*Le doy un formato al formulario de la seccion asesoramiento.html*/
@@ -233,12 +253,12 @@ main form {
 }
 
 main form .lead {
-  color: blanchedalmond;
+  color: #140d1d;
   /*Las palabras que estan dentro del formulario les doy color con esta línea de código*/
 }
 
 footer {
-  background-color: black;
+  background-color: #0a0222;
   /*El fondo de pantalla de mi footer lo asigno con esta lína utilizando una variable*/
   margin-top: 15rem;
   /*Le pongo un margin top para separarlo del main y que quede abajo bien en el pie de pagina*/
@@ -264,7 +284,7 @@ footer ul {
           justify-content: space-between;
   font-size: 1.2rem;
   margin: 1rem;
-  color: #f3efef;
+  color: #100235;
   /*El color del texto lo defino con una variable que ya tiene asignado un color*/
 }
 
@@ -280,9 +300,14 @@ footer ul li:hover {
   font-size: 1.4rem;
 }
 
+footer ul .nav-link {
+  background-color: #E0B000;
+  color: #0a0222;
+}
+
 @media screen and (max-width: 1024px) {
   .contenedor {
-    background-color: linear-gradient(to bottom, #383083, #9a989b);
+    background-color: #f1f1f1;
     /*Utilizo el mismo fondo en todos las medias quaries*/
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -330,7 +355,7 @@ footer ul li:hover {
 /*-----------------------------INICIA MEDIA QUARIE 768PX--------------------------------------------*/
 @media screen and (max-width: 768px) {
   .contenedor {
-    background-color: linear-gradient(to bottom, #383083, #9a989b);
+    background-color: #f1f1f1;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -368,7 +393,7 @@ footer ul li:hover {
 /*-----------------------------INICIA MEDIA QUARIE 578PX--------------------------------------------*/
 @media screen and (max-width: 578px) {
   .contenedor {
-    background-color: linear-gradient(to bottom, #383083, #9a989b);
+    background-color: #f1f1f1;
     justify-items: center;
   }
   .contenedor main .foto_main {

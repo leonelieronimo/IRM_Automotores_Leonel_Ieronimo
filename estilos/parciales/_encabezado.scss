@@ -17,11 +17,11 @@
                                                          y contenidos que llevan*/
                 color: $color-navs-encabezado;
                 font-size: 1rem;                              
-                transition: all 0.7s;
+                transition: all 0.5s;
                   
                 &:hover
                 {
-                    font-size: 1.2rem;      /*Cuando el cursor este por encima de algun nav del header aumentaran su tamaño*/
+                    font-size: 1.1rem;      /*Cuando el cursor este por encima de algun nav del header aumentaran su tamaño*/
                 }
             }    
         }
@@ -35,5 +35,9 @@
         font-size: 2rem;
         color: $color-titulo-encabezado;    /*Para el titulo del encabezado utilizo una variable que contiene su color*/
         padding: 1rem;
+        &:hover
+        {
+            color: white;
+        }
     }
 }

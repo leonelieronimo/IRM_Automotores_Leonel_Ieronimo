@@ -25,5 +25,11 @@ footer
                 font-size: 1.4rem;
             }
         }
+        .nav-link
+        {
+            background-color:$color-navs-encabezado;
+            color:$color-fondo-footer;
+        }
+
     } 
 }

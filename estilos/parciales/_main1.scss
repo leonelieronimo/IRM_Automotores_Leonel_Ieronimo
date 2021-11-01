@@ -39,13 +39,30 @@ main
         margin-top: 3rem;
         align-content: flex-start;  /*Separo con el margin la seccion de google maps que aparece en la seecion nosotros.html*/
     }
+    .btn
+    {
+        background-color: $color-fondo-encabezado;
+        color:$color-navs-encabezado;
+    }
+    .dropdown-menu
+    {
+        background-color:$color-fondo-encabezado;
+    }
+    .dropdown-item
+    {
+        color: $color-navs-encabezado;
+        &:hover
+        {
+            background-color: $color-fondo;
+        }
+    }
     form
     {
         padding: 1.3rem;    /*Le doy un formato al formulario de la seccion asesoramiento.html*/
         margin: 1rem;
         .lead
         {               
-            color: blanchedalmond;  /*Las palabras que estan dentro del formulario les doy color con esta línea de código*/
+            color: rgb(20, 13, 29);  /*Las palabras que estan dentro del formulario les doy color con esta línea de código*/
         }
     }
 }
