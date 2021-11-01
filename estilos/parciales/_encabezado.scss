@@ -6,18 +6,29 @@
 {
     background-color: $color-fondo-encabezado;  /*Para el encabezado utilizo una variable que contiene el color de mi fondo de pantalla*/
     height: 100%;
-    .navbar-light .navbar-nav .nav-link
+    .navbar-light
     {
-        color: $color-navs-encabezado;
-        display: flex;
-        padding: 1rem;      /*Para todo el encabezado elijo trabajar con flexbox para acomodar mas facil los items 
-                                y contenidos que llevan*/
-        font-size: 1rem;        
-        transition: all 0.7s;   
+        .navbar-nav
+        {
+            .nav-link
+            {
+                display: flex;
+                padding: 1rem;                          /*Para todo el encabezado elijo trabajar con flexbox para acomodar mas facil los items 
+                                                         y contenidos que llevan*/
+                color: $color-navs-encabezado;
+                font-size: 1rem;                              
+                transition: all 0.7s;
+                  
+                &:hover
+                {
+                    font-size: 1.2rem;      /*Cuando el cursor este por encima de algun nav del header aumentaran su tamaño*/
+                }
+            }    
+        }
         &:hover
         {
-            font-size: 1.2rem;      /*Cuando el cursor este por encima de algun nav del header aumentaran su tamaño*/
-        }
+            color: $color-navs-encabezado;
+        }      
     }
     .encabezado-titulo
     {
