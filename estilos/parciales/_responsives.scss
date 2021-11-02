@@ -64,7 +64,7 @@
 
             .foto_main
             {
-                @include fotos (16rem,16rem,0rem,0px);  /*Asignando formato a la imagenes de index.html con mixin*/
+                @include fotos (20rem,16rem,0rem,0px);  /*Asignando formato a la imagenes de index.html con mixin*/
             }
             
             .main-texto
@@ -100,9 +100,9 @@
 
 
 
-/*-----------------------------INICIA MEDIA QUARIE 578PX--------------------------------------------*/
+/*-----------------------------INICIA MEDIA QUARIE 425PX--------------------------------------------*/
 
-@media screen and (max-width: 578px) 
+@media screen and (max-width: 425px) 
 {
     .contenedor
     {
@@ -111,12 +111,16 @@
         .encabezado
         {
             width: 100%;
+            &-titulo
+            {
+                font-size: 1.8rem;
+            }
         }
         main
         {
             .foto_main
             {
-                @include fotos (30rem,25rem,1rem,0px);  /*Asignando formato a la imagenes de index.html con mixin*/
+                @include fotos (24rem,19rem,1rem,0px);  /*Asignando formato a la imagenes de index.html con mixin*/
             }
             .main-texto
             {
@@ -140,17 +144,32 @@
             }
             iframe
             {
-                @include fotos(30rem,25rem ,1rem ,0rem );
+                @include fotos(24rem,20rem ,1rem ,0rem );
             }
         }
         footer
         {
             width: 100%;
+            align-items: center;
+            ul
+            {
+                margin: 0.5rem;
+                padding: 0rem;
+                li
+                {
+                    font-size: 1.5rem;
+                    transition: all 0.5s;
+                    &:hover
+                    {
+                        font-size: 1.7rem;
+                    }
+                }
+            }
         }
     }
 }
 
-/*-----------------------------FIN MEDIA QUARIE 578PX--------------------------------------------*/
+/*-----------------------------FIN MEDIA QUARIE 425PX--------------------------------------------*/
 
 
 
@@ -170,18 +189,22 @@
         .encabezado
         {
             width: 100%;
+            &-titulo
+            {
+                font-size: 1.6rem;
+            }
         }
         main
         {
             .foto_main
             {
-                @include fotos (29rem,20rem,1rem,0px);  /*Asignando formato a la imagenes de index.html con mixin*/
+                @include fotos (21rem,16rem,1rem,0px);  /*Asignando formato a la imagenes de index.html con mixin*/
             }
             .main-texto
             {
-                margin: 1rem;           /*Le asigno formato a las palabras que se encuentran dentro del main
+                margin: 0.7rem;           /*Le asigno formato a las palabras que se encuentran dentro del main
                                         como los subtitulos u oraciones*/
-                font-size: 25px;
+                font-size: 20px;
             }
             ul li
             {
@@ -199,12 +222,27 @@
             }
             iframe
             {
-                @include fotos (29rem,20rem,1rem,0px);
+                @include fotos (21rem,17rem,1rem,0px);
             }
         }
         footer
         {
             width: 100%;
+            align-items: center;
+            ul
+            {
+                margin: 0.5rem;
+                padding: 0rem;
+                li
+                {
+                    font-size: 1.3rem;
+                    transition: all 0.5s;
+                    &:hover
+                    {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
         }
     }
 }
@@ -232,18 +270,23 @@
         .encabezado
         {
             width: 100%;
+            &-titulo
+            {
+                font-size: 1.25rem;
+            }
+
         }
         main
         {
             .foto_main
             {
-                @include fotos (22rem,18rem,1rem,0px);  /*Asignando formato a la imagenes de index.html con mixin*/
+                @include fotos (18rem,14rem,1rem,0px);  /*Asignando formato a la imagenes de index.html con mixin*/
             }
             .main-texto
             {
                 margin: 1rem;           /*Le asigno formato a las palabras que se encuentran dentro del main
                                         como los subtitulos u oraciones*/
-                font-size: 25px;
+                font-size: 20px;
             }
             ul li
             {
@@ -261,12 +304,27 @@
             }
             iframe
             {
-                @include fotos (29rem,20rem,1rem,0px);
+                @include fotos (18rem,16rem,1rem,0px);
             }
         }
         footer
         {
             width: 100%;
+            align-items: center;
+            ul
+            {
+                margin: 0.5rem;
+                padding: 0rem;
+                li
+                {
+                    font-size: 1rem;
+                    transition: all 0.5s;
+                    &:hover
+                    {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
         }
     }
 }
