@@ -325,6 +325,10 @@ main .foto_main_ventas {
                                             es width, height, padding, margin*/
 }
 
+main h1 {
+  font-size: 1.6rem;
+}
+
 main .main-texto {
   margin: 1rem;
   font-style: normal;
