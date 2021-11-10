@@ -20,7 +20,7 @@ main
     }
     .main-texto
     {
-        margin: 1rem;  
+        margin: 1rem;
         font-style:normal;
         color:$color-texto;     /*Le doy formato a las palabras que se encuentren dentro del main en cualquer secion*/
         text-decoration: none;
@@ -34,6 +34,19 @@ main
     {
         margin-bottom: 5rem;    /*Pongo un margen superior en las cards de la seccion ventas para separarlas*/
     }
+    .card
+    {   
+        height: 20rem;
+        &:hover
+        {
+            background-color: $color-fondo-encabezado;
+            color: $color-navs-encabezado;
+        }
+        &-img-top
+        {
+            height: 10rem;
+        }
+    }
     iframe
     {
         margin-top: 3rem;
@@ -43,6 +56,11 @@ main
     {
         background-color: $color-fondo-encabezado;
         color:$color-navs-encabezado;
+        &:hover
+        {
+            background-color: $color-navs-encabezado;
+            color: $color-fondo-encabezado;
+        }
     }
     .dropdown-menu
     {
@@ -53,7 +71,8 @@ main
         color: $color-navs-encabezado;
         &:hover
         {
-            background-color: $color-fondo;
+            background-color: $color-navs-encabezado;
+            color: $color-fondo-encabezado;
         }
     }
     form

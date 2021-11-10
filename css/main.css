@@ -131,7 +131,14 @@
   }
   .contenedor main .card {
     margin-bottom: 5rem;
-    /*Le asigno un margen inferior a la card de ventas.html para que no queden juntas unas con otras*/
+    height: 25rem;
+  }
+  .contenedor main .card:hover {
+    background-color: #0a0222;
+    color: #E0B000;
+  }
+  .contenedor main .card-img-top {
+    height: 16rem;
   }
   .contenedor main form {
     padding: 1.3rem;
@@ -180,7 +187,14 @@
   }
   .contenedor main .card {
     margin-bottom: 5rem;
-    /*Le asigno un margen inferior a la card de ventas.html para que no queden juntas unas con otras*/
+    height: 25rem;
+  }
+  .contenedor main .card:hover {
+    background-color: #0a0222;
+    color: #E0B000;
+  }
+  .contenedor main .card-img-top {
+    height: 16rem;
   }
   .contenedor main form {
     padding: 1.3rem;
@@ -227,7 +241,7 @@
     font-size: 1.6rem;
   }
   .contenedor main .foto_main {
-    width: 21rem;
+    width: 22rem;
     height: 16rem;
     padding: 1rem;
     /*Uso una mixin que la utilizo en las otras secciones de scss para darle formato a las imagenes*/
@@ -312,7 +326,14 @@
   }
   .contenedor main .card {
     margin-bottom: 5rem;
-    /*Le asigno un margen inferior a la card de ventas.html para que no queden juntas unas con otras*/
+    height: 24rem;
+  }
+  .contenedor main .card:hover {
+    background-color: #0a0222;
+    color: #E0B000;
+  }
+  .contenedor main .card-img-top {
+    height: 14rem;
   }
   .contenedor main form {
     padding: 1.3rem;
@@ -397,6 +418,19 @@ main .card-deck {
   /*Pongo un margen superior en las cards de la seccion ventas para separarlas*/
 }
 
+main .card {
+  height: 20rem;
+}
+
+main .card:hover {
+  background-color: #0a0222;
+  color: #E0B000;
+}
+
+main .card-img-top {
+  height: 10rem;
+}
+
 main iframe {
   margin-top: 3rem;
   -ms-flex-line-pack: start;
@@ -409,6 +443,11 @@ main .btn {
   color: #E0B000;
 }
 
+main .btn:hover {
+  background-color: #E0B000;
+  color: #0a0222;
+}
+
 main .dropdown-menu {
   background-color: #0a0222;
 }
@@ -418,7 +457,8 @@ main .dropdown-item {
 }
 
 main .dropdown-item:hover {
-  background-color: linear-gradient(to bottom, white, #9a989b);
+  background-color: #E0B000;
+  color: #0a0222;
 }
 
 main form {
@@ -555,7 +595,14 @@ footer ul .nav-link {
   }
   .contenedor main .card {
     margin-bottom: 5rem;
-    /*Le asigno un margen inferior a la card de ventas.html para que no queden juntas unas con otras*/
+    height: 25rem;
+  }
+  .contenedor main .card:hover {
+    background-color: #0a0222;
+    color: #E0B000;
+  }
+  .contenedor main .card-img-top {
+    height: 16rem;
   }
   .contenedor main form {
     padding: 1.3rem;
@@ -604,7 +651,14 @@ footer ul .nav-link {
   }
   .contenedor main .card {
     margin-bottom: 5rem;
-    /*Le asigno un margen inferior a la card de ventas.html para que no queden juntas unas con otras*/
+    height: 25rem;
+  }
+  .contenedor main .card:hover {
+    background-color: #0a0222;
+    color: #E0B000;
+  }
+  .contenedor main .card-img-top {
+    height: 16rem;
   }
   .contenedor main form {
     padding: 1.3rem;
@@ -651,7 +705,7 @@ footer ul .nav-link {
     font-size: 1.6rem;
   }
   .contenedor main .foto_main {
-    width: 21rem;
+    width: 22rem;
     height: 16rem;
     padding: 1rem;
     /*Uso una mixin que la utilizo en las otras secciones de scss para darle formato a las imagenes*/
@@ -736,7 +790,14 @@ footer ul .nav-link {
   }
   .contenedor main .card {
     margin-bottom: 5rem;
-    /*Le asigno un margen inferior a la card de ventas.html para que no queden juntas unas con otras*/
+    height: 24rem;
+  }
+  .contenedor main .card:hover {
+    background-color: #0a0222;
+    color: #E0B000;
+  }
+  .contenedor main .card-img-top {
+    height: 14rem;
   }
   .contenedor main form {
     padding: 1.3rem;

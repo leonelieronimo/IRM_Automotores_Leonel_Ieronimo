@@ -80,7 +80,17 @@
             } 
             .card
             {
-                margin-bottom: 5rem;     /*Le asigno un margen inferior a la card de ventas.html para que no queden juntas unas con otras*/
+                margin-bottom: 5rem;
+                height: 25rem;
+                &:hover         /*Le asigno un margen inferior a la card de ventas.html para que no queden juntas unas con otras*/
+                {
+                    background-color: $color-fondo-encabezado;
+                    color: $color-navs-encabezado;
+                }
+                &-img-top
+                {
+                    height: 16rem;
+                }     
             }
             form
             {
@@ -135,7 +145,17 @@
             }
             .card
             {
-                margin-bottom: 5rem;     /*Le asigno un margen inferior a la card de ventas.html para que no queden juntas unas con otras*/
+                margin-bottom: 5rem;
+                height: 25rem;
+                &:hover                     /*Le asigno un margen inferior a la card de ventas.html para que no queden juntas unas con otras*/
+                {           
+                    background-color: $color-fondo-encabezado;
+                    color: $color-navs-encabezado;
+                }
+                &-img-top
+                {
+                    height: 16rem;
+                }     
             }
             form
             {
@@ -198,7 +218,7 @@
         {
             .foto_main
             {
-                @include fotos (21rem,16rem,1rem,0px);  /*Asignando formato a la imagenes de index.html con mixin*/
+                @include fotos (22rem,16rem,1rem,0px);  /*Asignando formato a la imagenes de index.html con mixin*/
             }
             .main-texto
             {
@@ -213,7 +233,8 @@
             }
             .card
             {
-                margin-bottom: 5rem;     /*Le asigno un margen inferior a la card de ventas.html para que no queden juntas unas con otras*/
+                margin-bottom: 5rem;
+                                         /*Le asigno un margen inferior a la card de ventas.html para que no queden juntas unas con otras*/
             }
             form
             {
@@ -295,7 +316,17 @@
             }
             .card
             {
-                margin-bottom: 5rem;     /*Le asigno un margen inferior a la card de ventas.html para que no queden juntas unas con otras*/
+                margin-bottom: 5rem; 
+                height: 24rem;
+                &:hover                  /*Le asigno un margen inferior a la card de ventas.html para que no queden juntas unas con otras*/
+                {
+                    background-color: $color-fondo-encabezado;
+                    color: $color-navs-encabezado;
+                }
+                &-img-top
+                {
+                    height: 14rem;
+                }    
             }
             form
             {
@@ -328,8 +359,6 @@
         }
     }
 }
-
-
 
 
 /*-----------------------------FIN MEDIA QUARIE 320PX--------------------------------------------*/
