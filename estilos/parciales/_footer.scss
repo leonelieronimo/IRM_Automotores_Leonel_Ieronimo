@@ -3,7 +3,7 @@
 footer
 {
     background-color: $color-fondo-footer;  /*El fondo de pantalla de mi footer lo asigno con esta lína utilizando una variable*/
-    margin-top: 15rem;  /*Le pongo un margin top para separarlo del main y que quede abajo bien en el pie de pagina*/
+    margin-top: 100vh; /*Le pongo un margin top para separarlo del main y que quede abajo bien en el pie de pagina*/
     ul
     {
         display: flex;

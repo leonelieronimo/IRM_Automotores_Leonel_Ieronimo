@@ -4,8 +4,8 @@
   background: linear-gradient(to bottom, white, #9a989b);
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 0.25fr auto 1fr;
-      grid-template-rows: 0.25fr auto 1fr;
+  -ms-grid-rows: 0.1fr auto 1fr;
+      grid-template-rows: 0.1fr auto 1fr;
   /* Utilizo grid para armar mi pagina y lo divido en 3 filas.
                                             Para el fondo utilizo una funcion linear-gradient */
   -webkit-box-align: center;
@@ -475,7 +475,7 @@ main form .lead {
 footer {
   background-color: #0a0222;
   /*El fondo de pantalla de mi footer lo asigno con esta lína utilizando una variable*/
-  margin-top: 15rem;
+  margin-top: 100vh;
   /*Le pongo un margin top para separarlo del main y que quede abajo bien en el pie de pagina*/
 }
 
